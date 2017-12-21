@@ -12,37 +12,46 @@
         margin: auto;
         width: 100%;
       }
-
       body {
         background: #1793b6;
       }
-
       #container {
         width: 100%;
         height: 100%;
       }
-
       #main {
         width: 100%;
         text-align: center;
         position: relative;
         top: 50%;
       }
-
       #logo {
         height: 150px;
         width: 150px;
         position: relative;
-        top: -100px;
+        top: -130px;
       }
-
       #tagline {
         font-family: 'Lato', sans-serif;
         font-size: 18px;
         color: #fff;
         opacity: 0.9;
         position: relative;
-        top: -100px;
+        top: -130px;
+      }
+      #social {
+        position: relative;
+        top: -120px;
+      }
+      .buttons {
+        height: 20px;
+        width: auto;
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -51,6 +60,11 @@
       <div id='main'>
         <span><img id='logo' src='./bsc_logo.png'></span>
         <p><span id='tagline' class='text-mask'>Early-stage venture capital<br/>for component technologies.</span></p>
+        <span id='social'>
+          <a target='_blank' href='mailto:madison@blueskycapital.vc'><img class='buttons' src='./email_icon.png'></a>
+          <a target='_blank' href='https://medium.com/@blueskyvc'><img class='buttons' src='./medium_icon.png'></a>
+          <a target='_blank' href='https://twitter.com/@blueskyvc'><img class='buttons' src='./twitter_icon.png'></a>
+        </span>
       </div>
     </div>
     <script>
