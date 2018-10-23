@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;  
+  background: #1793b6;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+h2 {
+  font-size: 14px;
+  margin: 4em 0;
+  text-transform: uppercase;
+  color: white;
+  color: rgba(255,255,255,.8);
+  letter-spacing: 1px;
+}
+
+#tagline {
+  color: white;
+  color: rgba(255,255,255,.8);
+}
+
+.page-home #site {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  max-width: 250px;
+}
+
+header img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+
+.page-home #main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; 
+  text-align: center; 
+}
+
+nav ul {
+  margin: 1em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 .25em
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: .25em;
+  font-weight: bold;
+}
+
+nav img {
+  display: inline-block;
+  width: 20px;
+  height: auto;
+}
+
+.page-sub #main {
+  padding-bottom: 4em;
+}
+
+.page-sub nav ul {
+  display: flex;
+  align-items: center; 
+  margin: .5em 0 0 0;
+}
+
+.page-sub .left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  padding: 1em;
+}
+
+.page-sub .main-content {
+  font-weight: 300;
+  color: white;
+  color: rgba(255,255,255,.9);
+  padding: 2em;
+}
+
+.page-sub .main-content h1 {
+  font-size: 32px;
+  margin: 0 0 .5em;
+}
+
+.companies {
+  margin: 0 0 4em;
+  padding: 0;
+  list-style: none;
+}
+
+.companies img {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  opacity: 0.6;
+}
+
+.companies li {
+  margin-bottom: 3em;
+}
+
+.companies h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.companies li figure {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+form {
+  padding-top: 2em;
+}
+
+form .field-group {
+  margin-bottom: 1em;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: .25em;
+}
+
+form .field-group input,
+form .field-group textarea {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  margin: 0;
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  background-clip: padding-box;
+  border: 2px solid white;
+  border-color: rgba(255,255,255,.5);
+  color: white;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+}
+
+form .field-group textarea {
+  height: 150px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  color: #1793b6;
+  background-color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+@media only screen and (min-width: 480px) {
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    margin: 1em 0 0 0;
+  }
+
+  .page-sub header img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .page-sub #main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .page-sub .left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 25%;
+    padding: 4.3em 0 0 0;
+    font-size: 14px;
+    opacity: .7;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .page-sub .left-col:hover {
+    opacity: 1;
+  }
+
+  .page-sub .main-content {
+    padding: 0;
+  }
+
+  .page-sub #tagline {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .page-sub nav ul li {
+    margin: 0 .25em;
+  }
+
+  .page-sub .main-content {
+    width: 75%;
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 12%;
+    font-size: 17px;
+  }
+
+  .page-sub .main-content p {
+    max-width: 550px;
+  }
+
+  .companies li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .companies li figure {
+    flex: 0 0 20%;
+    text-align: center;
+  }
+
+  .companies li img {
+    max-width: 300px;
+  }
+
+  .companies li .heading {
+    flex: 0 0 80%;
+    padding-left: 7%;
+  }
+
+  .companies li p {
+    margin: 0;
+  }
+
+  form {
+    max-width: 400px;
+  }
+}

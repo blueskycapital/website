@@ -1,71 +1,34 @@
 <html>
   <head>
     <title>BlueSky Capital</title>
-    <link rel='icon' type='image/x-icon' href='favicon.ico' />
-    <meta id='viewport' name='viewport' content ='width=device-width, initial-scale=1.0, user-scalable=no' />
-    <meta name='description' content='Early-stage venture capital for component technologies.' />
-    <meta name='keywords' content='blue, sky, venture, capital, components, hardware, technologies, silicon, materials, optics, sensors, artificial intelligence, robotics' />
-    <meta name='author' content='BlueSky Capital' />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta id="viewport" name="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Early-stage venture capital for component technologies." />
+    <meta name="keywords" content="blue, sky, venture, capital, components, hardware, technologies, silicon, materials, optics, sensors, artificial intelligence, robotics" />
+    <meta name="author" content="BlueSky Capital" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
     <style>
-      html, body {
-        margin: auto;
-        width: 100%;
-      }
-      body {
-        background: #1793b6;
-      }
-      #container {
-        width: 100%;
-        height: 100%;
-      }
-      #main {
-        width: 100%;
-        text-align: center;
-        position: relative;
-        top: 50%;
-      }
-      #logo {
-        height: 150px;
-        width: 150px;
-        position: relative;
-        top: -130px;
-      }
-      #tagline {
-        font-family: 'Lato', sans-serif;
-        font-size: 18px;
-        color: #fff;
-        opacity: 0.9;
-        position: relative;
-        top: -130px;
-      }
-      #social {
-        position: relative;
-        top: -120px;
-      }
-      .buttons {
-        height: 20px;
-        width: auto;
-        padding-left: 7px;
-        padding-right: 7px;
-      }
-      a {
-        color: white;
-        text-decoration: none;
-      }
+      
     </style>
   </head>
-  <body>
-    <div id='container'>
-      <div id='main'>
-        <span><img id='logo' src='./bsc_logo.png'></span>
-        <p><span id='tagline' class='text-mask'>Early-stage venture capital<br/>for component technologies.</span></p>
-        <span id='social'>
-          <a href='mailto:madison@blueskycapital.vc'><img class='buttons' src='./email_icon.png'></a>
-          <a target='_blank' href='https://medium.com/@blueskycapital'><img class='buttons' src='./medium_icon.png'></a>
-          <a target='_blank' href='https://twitter.com/@blueskyvc'><img class='buttons' src='./twitter_icon.png'></a>
-        </span>
-      </div>
+  <body class="page-home">
+    <div id="site">
+      <main id="main">
+        <header>
+          <a href="./"><img id="logo" src="./bsc_logo.png"></a>
+          <p id="tagline">Early-stage venture capital for component technologies.</p>
+        </header>
+        <nav class="primary">
+          <ul>
+            <li><a href="./fund.html">Fund</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="https://medium.com/@blueskycapital" target="_blank">Blog</a></li>
+            <li><a href="https://twitter.com/@blueskyvc" target="_blank"><img src="./twitter_icon.png"></a></li>
+          </ul>
+        </nav>
+      </main>
     </div>
   </body>
 </html>
