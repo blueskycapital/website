@@ -266,12 +266,13 @@ form .field-group textarea {
   .companies li {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .companies li figure {
     flex: 0 0 20%;
     text-align: center;
+    margin-bottom: 0;
   }
 
   .companies li img {
